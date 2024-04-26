@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gratefull"/>
+
+        <TextView
+            android:layout_width="380dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:padding="20sp"
+            android:text="Courage to face uncertainty is the key to achieving your dreams. Don't let fear hinder your steps towards a bright future."
+            android:textColor="#29315C"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/motivation"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Create Many Motivation"
+            android:layout_centerInParent="true"/>
+
+    </LinearLayout>
+
+</LinearLayout>

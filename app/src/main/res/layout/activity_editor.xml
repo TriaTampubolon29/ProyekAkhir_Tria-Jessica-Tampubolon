@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".EditorActivity">
+
+    <EditText
+        android:id="@+id/edit_topik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Topik"
+        android:layout_marginBottom="20dp"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/edit_motivation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Motivation"
+        android:inputType="textMultiLine"
+        android:layout_marginBottom="20dp"
+        android:autofillHints=""/>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"/>
+
+</LinearLayout>
