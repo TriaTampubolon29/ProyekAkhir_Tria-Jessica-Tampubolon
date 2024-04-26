@@ -53,4 +53,16 @@
         android:gravity="center"
         android:text="Create"
         android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tambah"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-2dp"
+        android:gravity="center"
+        android:text="Logout"
+        android:textSize="20dp" />
 </RelativeLayout>

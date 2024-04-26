@@ -37,6 +37,8 @@ public class MotivationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_motivation);
 
+        setupLogoutButton();
+
         db = new DatabaseHelper(getApplicationContext());
         tambah = findViewById(R.id.tambah);
         tambah.setOnClickListener(new View.OnClickListener() {
@@ -98,6 +100,21 @@ public class MotivationActivity extends AppCompatActivity {
             lists.add(data);
         }
         adapter.notifyDataSetChanged();
+    }
+    private void logout(){
+        Intent intent = new Intent(MotivationActivity.this, LoginActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK); // Hapus semua aktivitas lain dari tumpukan
+        startActivity(intent);
+        finish();
+    }
+    private void setupLogoutButton() {
+        Button logoutButton = findViewById(R.id.logout);
+        logoutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                logout(); // Panggil metode logout saat tombol logout ditekan
+            }
+        });
     }
 
     @Override
